@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar"
+import Products from "./components/Products"
 import Home from "./Pages/Home"
 
 const App = () => {
@@ -6,6 +7,7 @@ const App = () => {
     <div className="flex justify-center flex-col items-center ">
       <Navbar />
       <Home />
+      <Products />
     </div>
   )
 }
