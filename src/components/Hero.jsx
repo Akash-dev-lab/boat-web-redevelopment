@@ -16,7 +16,7 @@ export default function Hero() {
     <motion.section
       ref={heroRef}
       style={{ scale, opacity, filter: blurFilter }}
-      className="min-h-screen w-full text-white overflow-hidden relative"
+      className="min-h-screen w-full text-white overflow-hidden "
     >
       <video
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"

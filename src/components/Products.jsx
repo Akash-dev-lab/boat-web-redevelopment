@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ProductCard from "./ProductCard";
 import products from "../data/products";
 import DotGrid from '../ReactBits-component/DotGrid';
+import ScrollFloat from '../ReactBits-component/ScrollFloat';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -39,22 +40,33 @@ const Products = () => {
       className="sm:px-8 md:px-16 py-20 relative z-0 w-full min-h-screen text-white overflow-hidden"
     >
 
-      <div className="absolute inset-0 w-full h-full z-10">
-  <DotGrid
-    dotSize={5}
-        gap={25}
-        baseColor="#333"
-        activeColor="#e7000b"
-        proximity={220}
-        shockRadius={250}
-        shockStrength={5}
-        resistance={50}
-        returnDuration={0.2}
-  />
-</div>
+      <ScrollFloat
+        animationDuration={1}
+        ease='back.inOut(2)'
+        scrollStart='center bottom+=50%'
+        scrollEnd='bottom bottom-=40%'
+        stagger={0.03}
+        textClassName="text-[#e7000b]"
+      >
+        boAt Products
+      </ScrollFloat>
 
-      <h2 className="text-4xl sm:text-6xl font-bold text-center mb-20 mt-20 relative z-10">
-        <span className="text-[#e7000b]">Tech in Style: </span>boAt Products
+      <div className="absolute inset-0 w-full h-full -z-10">
+        <DotGrid
+          dotSize={5}
+          gap={25}
+          baseColor="#333"
+          activeColor="#e7000b"
+          proximity={220}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={50}
+          returnDuration={0.2}
+        />
+      </div>
+
+      <h2 className="text-4xl sm:text-6xl font-bold text-center mb-20 mt-20 relative z-10  font-[Montserrat]">
+        <span>Tech in Style</span>
       </h2>
 
       <div className="grid relative z-10 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -67,7 +79,6 @@ const Products = () => {
           </div>
         ))}
       </div>
-
 
     </section>
   );
