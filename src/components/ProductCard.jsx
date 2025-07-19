@@ -4,12 +4,13 @@ const ProductCard = ({ product }) => {
   return (
     <Tilt
       glareEnable={true}
-      glareMaxOpacity={0.2}
+      glareMaxOpacity={0.5}
       tiltMaxAngleX={10}
       tiltMaxAngleY={10}
+      glareColor="red"
       scale={1.02}
       transitionSpeed={1000}
-      className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-4 text-white shadow-md hover:shadow-xl transition-all duration-300"
+      className="backdrop-blur-md border border-white/10 rounded-2xl p-4 text-white shadow-md hover:shadow-xl transition-all duration-300"
     >
       <img
         src={product.image}

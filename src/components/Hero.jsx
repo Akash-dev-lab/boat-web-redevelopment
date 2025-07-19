@@ -1,7 +1,7 @@
 // ✅ Enhanced Hero.jsx with Scroll Exit Effect
 import { useRef } from "react";
 import Lenis from "@studio-freight/lenis";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, useMotionTemplate } from "framer-motion";
 
 export default function Hero() {
   const heroRef = useRef(null);
@@ -10,11 +10,12 @@ export default function Hero() {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.9]);
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
   const blur = useTransform(scrollYProgress, [0, 1], ["0px", "12px"]);
+  const blurFilter = useMotionTemplate`blur(${blur})`;
 
   return (
     <motion.section
       ref={heroRef}
-      style={{ scale, opacity }}
+      style={{ scale, opacity, filter: blurFilter }}
       className="min-h-screen w-full text-white overflow-hidden relative"
     >
       <video
@@ -53,7 +54,7 @@ export default function Hero() {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="mt-10 inline-block bg-orange-600 uppercase text-sm tracking-widest hover:bg-orange-700 text-white font-semibold cursor-pointer py-3 px-6 rounded-xl shadow-lg transition"
+          className="mt-10 inline-block backdrop-blur-xl bg-white/10 uppercase text-sm tracking-widest hover:bg-orange-700 text-white font-semibold cursor-pointer py-3 px-6 rounded-xl shadow-lg transition"
           style={{ fontFamily: 'Inter, sans-serif' }}
         >
           Explore Products

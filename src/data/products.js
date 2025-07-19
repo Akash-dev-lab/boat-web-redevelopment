@@ -14,6 +14,29 @@ const products = [
     image: 'https://www.boat-lifestyle.com/cdn/shop/files/R255Pro_-FI_Black01_700x.png?v=1713177293',
     price: 999,
     category: 'neckbands'
+  },
+  {
+    id: 3,
+    name: 'boAt Rockerz 255',
+    description: 'Bluetooth neckband with super bass.',
+    image: 'https://www.boat-lifestyle.com/cdn/shop/files/R255Pro_-FI_Black01_700x.png?v=1713177293',
+    price: 999,
+    category: 'neckbands'
+  },{
+    id: 4,
+    name: 'boAt Rockerz 255',
+    description: 'Bluetooth neckband with super bass.',
+    image: 'https://www.boat-lifestyle.com/cdn/shop/files/R255Pro_-FI_Black01_700x.png?v=1713177293',
+    price: 999,
+    category: 'neckbands'
+  },
+  {
+    id: 5,
+    name: 'boAt Rockerz 255',
+    description: 'Bluetooth neckband with super bass.',
+    image: 'https://www.boat-lifestyle.com/cdn/shop/files/R255Pro_-FI_Black01_700x.png?v=1713177293',
+    price: 999,
+    category: 'neckbands'
   }
   // Add more products as needed
 ];
