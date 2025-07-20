@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react"
 import Navbar from "./components/Navbar"
-import Products from "./components/Products"
+import Products from "./Pages/Products"
 import CursorBall from "./CursorBall"
 import Home from "./Pages/Home"
 import { useRef } from "react"
 import gsap from "gsap"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 function SlideDownIndicator() {
   const [visible, setVisible] = useState(true)
@@ -65,8 +66,10 @@ const App = () => {
       <SlideDownIndicator />
       <CursorBall />
       <Navbar />
-      <Home />
-      <Products />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />   
+      </Routes>
     </div>
   )
 }

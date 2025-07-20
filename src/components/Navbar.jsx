@@ -9,12 +9,13 @@ const Navbar = () => {
         <header className="fixed w-[90%] top-6 rounded-lg z-50 backdrop-blur-xl bg-white/10 border-b border-white/10 shadow-md">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
                 {/* Logo */}
-                <Link to="/" className="sm:text-4xl font-bold text-red-600 tracking-tight">
-                    bo<span className="text-white sm:text-4xl">At</span>
-                </Link>
+                    <Link to="/" className="sm:text-4xl font-bold text-red-600 tracking-tight">
+                        bo<span className="text-white sm:text-4xl">At</span>
+                    </Link>
 
                 {/* Desktop Nav */}
                 <nav className="hidden md:flex gap-8 text-white font-medium">
+                    
                     <Link className='hover:text-[#e0531f]' to="/">Home</Link>
                     <Link className='hover:text-[#e0531f]' to="/products">Products</Link>
                     <Link className='hover:text-[#e0531f]' to="/about">About</Link>

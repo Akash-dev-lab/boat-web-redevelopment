@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import ProductCard from "./ProductCard";
+import ProductCard from "../components/ProductCard";
 import products from "../data/products";
 import DotGrid from '../ReactBits-component/DotGrid';
-import ScrollFloat from '../ReactBits-component/ScrollFloat';
+import { BoxReveal } from "../components/magicui.jsx/box-reveal";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -37,19 +37,11 @@ const Products = () => {
     <section
       id="products"
       ref={containerRef}
-      className="sm:px-8 md:px-16 py-20 relative z-0 w-full min-h-screen text-white overflow-hidden"
+      className="px-4 sm:px-8 md:px-16 lg:px-32 relative z-0 w-full min-h-screen text-white overflow-hidden"
     >
-
-      <ScrollFloat
-        animationDuration={1}
-        ease='back.inOut(2)'
-        scrollStart='center bottom+=50%'
-        scrollEnd='bottom bottom-=40%'
-        stagger={0.03}
-        textClassName="text-[#e7000b]"
-      >
-        boAt Products
-      </ScrollFloat>
+        <div className="text-4xl sm:text-9xl font-bold font-[Inter] flex justify-center w-full mb-20 max-sm:mb-2 mt-30 lg:mt-40">
+          <BoxReveal boxColor="red">Wear the <span className="text-red-600">Sound</span><br /> Be the Vibe.</BoxReveal>
+        </div>
 
       <div className="absolute inset-0 w-full h-full -z-10">
         <DotGrid
@@ -65,21 +57,16 @@ const Products = () => {
         />
       </div>
 
-      <h2 className="text-4xl sm:text-6xl font-bold text-center mb-20 mt-20 relative z-10  font-[Montserrat]">
-        <span>Tech in Style</span>
-      </h2>
-
       <div className="grid relative z-10 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {products.map((product) => (
           <div
             key={product.id}
-            className="product-card p-6 sm:p-0"
+            className="product-card p-6 lg:p-0"
           >
             <ProductCard product={product} />
           </div>
         ))}
       </div>
-
     </section>
   );
 };

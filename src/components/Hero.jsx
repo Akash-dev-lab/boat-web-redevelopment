@@ -1,6 +1,4 @@
-// ✅ Enhanced Hero.jsx with Scroll Exit Effect
 import { useRef } from "react";
-import Lenis from "@studio-freight/lenis";
 import { motion, useScroll, useTransform, useMotionTemplate } from "framer-motion";
 
 export default function Hero() {
