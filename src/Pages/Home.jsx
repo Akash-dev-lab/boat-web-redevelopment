@@ -55,8 +55,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2 }}
-            className="md:text-8xl text-[clamp(2.9rem,9vw,9rem)] font-extrabold leading-tight text-white tracking-tight"
-            style={{ fontFamily: 'Montserrat, sans-serif' }}
+            className="md:text-8xl text-[clamp(2.9rem,9vw,9rem)] font-extrabold leading-tight text-white tracking-tight font-[Inter]"
           >
             Unleash <span className="text-orange-500">Sound</span><br />
             with <span className="text-red-600">boAt</span> Lifestyle

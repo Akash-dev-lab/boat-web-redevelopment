@@ -14,7 +14,7 @@ const Navbar = () => {
                     </Link>
 
                 {/* Desktop Nav */}
-                <nav className="hidden md:flex gap-8 text-white font-medium">
+                <nav className="hidden md:flex gap-8 text-white font-[Inter] font-bold">
                     
                     <Link className='hover:text-[#e0531f]' to="/">Home</Link>
                     <Link className='hover:text-[#e0531f]' to="/products">Products</Link>
