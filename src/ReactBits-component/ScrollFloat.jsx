@@ -68,13 +68,18 @@ const ScrollFloat = ({
     );
   }, [scrollContainerRef, animationDuration, ease, scrollStart, scrollEnd, stagger]);
 
-  return (
-    <h2 ref={containerRef} className={`scroll-float text-center ${containerClassName}`}>
-      <span className={`scroll-float-text ${textClassName}`}>
-        {splitText}
-      </span>
+return (
+    <h2
+        ref={containerRef}
+        className={`scroll-float text-center ${containerClassName} text-[clamp(2rem,8vw,4rem)] leading-tight break-words px-4`}
+    >
+        <span
+            className={`scroll-float-text ${textClassName} inline-block w-full max-w-full break-words`}
+        >
+            {splitText}
+        </span>
     </h2>
-  );
+);
 };
 
 export default ScrollFloat;

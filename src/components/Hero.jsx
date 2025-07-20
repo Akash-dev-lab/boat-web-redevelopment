@@ -54,7 +54,7 @@ export default function Hero() {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="mt-10 inline-block backdrop-blur-xl bg-white/10 uppercase text-sm tracking-widest hover:bg-orange-700 text-white font-semibold cursor-pointer py-3 px-6 rounded-xl shadow-lg transition"
+          className="mt-10 inline-block backdrop-blur-xl bg-white/10 uppercase text-sm tracking-widest hover:bg-red-700 hover:text-white font-semibold cursor-pointer py-3 px-6 rounded-xl shadow-lg transition"
           style={{ fontFamily: 'Inter, sans-serif' }}
         >
           Explore Products
