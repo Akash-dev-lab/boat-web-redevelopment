@@ -33,7 +33,7 @@ export default function CursorBall() {
   return (
     <div
       ref={ballRef}
-      className="fixed top-0 left-0 pointer-events-none z-[9999]"
+      className="cursor-ball fixed top-0 left-0 pointer-events-none z-[9999]"
       style={{
         width: 24,
         height: 24,
