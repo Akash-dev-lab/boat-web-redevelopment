@@ -1,6 +1,7 @@
 import Tilt from "react-parallax-tilt";
 
 const ProductCard = ({ product }) => {
+  console.log(product);
   return (
     <Tilt
       glareEnable={true}

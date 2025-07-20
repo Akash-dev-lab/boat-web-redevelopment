@@ -7,6 +7,7 @@ import { useRef } from "react"
 import gsap from "gsap"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
+
 function SlideDownIndicator() {
   const [visible, setVisible] = useState(true)
   const indicatorRef = useRef(null)
@@ -68,8 +69,10 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />   
+        <Route path="/products" element={<Products />} />
+
       </Routes>
+      
     </div>
   )
 }
