@@ -1,15 +1,41 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import ArrivalCard from "../components/ArrivalCard";
-import NewArrivalsData from "../data/NewArrivals";
+import SaleCard from "../components/SaleCard";
 import { BoxReveal } from "../components/magicui/box-reveal";
 import Particles from '../ReactBits-component/Particles';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const NewArrivals = () => {
+const BigDeals = () => {
     const containerRef = useRef(null);
+
+    const SaleProducts = [
+  {
+    id: 1,
+    name: 'boAt Airdopes Prime 701 ANC',
+    description: 'Wireless Earbuds with 50 Hours Playback, 46dB Hybrid ANC, Spatial Audio, Multipoint & BEAST™ Mode',
+    image: 'https://www.boat-lifestyle.com/cdn/shop/files/Artboard_9_934cb755-473c-4db9-a194-d420df437564_700x.png?v=1750428860',
+    price: '₹ 2,199',
+    category: 'neckbands'
+  },
+  {
+    id: 2,
+    name: 'boAt Storm Call 3 Plus',
+    description: 'Smartwatch with 1.96" HD Display, BT Calling, 700+ Activity Modes, SOS feature, Functional Crown',
+    image: 'https://www.boat-lifestyle.com/cdn/shop/files/Artboard_12_copy_5_700x.png?v=1725944855',
+    price: '₹ 1,449',
+    category: 'neckbands'
+  },
+  {
+    id: 3,
+    name: 'boAt Stone 350',
+    description: 'Wireless Speaker with 10W Stereo Sound, 12 Hours Nonstop Playtime, Lightweight Design, BT, TF Card & AUX Compatible',
+    image: 'https://cdn.shopify.com/s/files/1/0057/8938/4802/files/1_fdcbadf5-5d2d-4ce3-9018-ee3e535fb60b.png?v=1745236290',
+    price: '₹ 1,799',
+    category: 'neckbands'
+  }
+];
 
     useEffect(() => {
         const cards = containerRef.current.querySelectorAll(".product-card");
@@ -39,8 +65,8 @@ const NewArrivals = () => {
             ref={containerRef}
             className="px-4 sm:px-8 md:px-16 lg:px-32 relative z-0 w-full min-h-screen text-white overflow-hidden"
         >
-            <div className="text-5xl sm:text-9xl font-bold font-[Inter] flex w-full mb-10 max-sm:mb-2 max-sm:justify-center mt-10 lg:mt-40">
-                <BoxReveal boxColor="red">New <span className="text-red-600">Arrivals</span><br /></BoxReveal>
+            <div className="text-5xl sm:text-9xl font-bold font-[Inter] flex w-full h-12 mb-10 max-sm:justify-center max-sm:mb-2 mt-10 lg:mt-40">
+                <BoxReveal boxColor="red">Sale <span className="text-red-600">Is Live</span><br /></BoxReveal>
             </div>
 
             <div className="absolute inset-0 w-full h-full -z-10">
@@ -57,14 +83,18 @@ const NewArrivals = () => {
             </div>
 
             <div className="grid relative z-10 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {NewArrivalsData.map((arrival) => (
-                    <div key={arrival.id} className="product-card p-6 lg:p-0">
-                        <ArrivalCard arrival={arrival} />
+                {SaleProducts.map((sale) => (
+                    <div key={sale.id} className="product-card p-6 lg:p-0">
+                        <SaleCard sale={sale} />
                     </div>
                 ))}
             </div>
+
+            <img
+                src="https://www.boat-lifestyle.com/cdn/shop/files/Strips_895f0826-e273-4982-8101-433c815815c1_1600x.png?v=1752817596"
+                alt="Sale Banner" />
         </section>
-    );
+    );  
 };
 
-export default NewArrivals
+export default BigDeals

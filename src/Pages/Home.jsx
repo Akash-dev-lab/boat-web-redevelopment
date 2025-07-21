@@ -4,8 +4,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform, useMotionTemplate } from "framer-motion";
 import { Link } from 'react-router-dom';
 import NewArrivals from '../Pages/NewArrivals';
-
-
+import SaleCard from './SaleIsLive';
 
 const Home = () => {
 
@@ -85,6 +84,7 @@ const Home = () => {
       </motion.section>
 
       <NewArrivals />
+      <SaleCard />
     </>
   )
 }

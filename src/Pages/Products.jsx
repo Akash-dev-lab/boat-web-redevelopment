@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ProductCard from "../components/ProductCard";
 import products from "../data/products";
 import DotGrid from '../ReactBits-component/DotGrid';
-import { BoxReveal } from "../components/magicui.jsx/box-reveal";
+import { BoxReveal } from "../components/magicui/box-reveal";
 
 gsap.registerPlugin(ScrollTrigger);
 

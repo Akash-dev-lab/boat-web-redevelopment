@@ -1,0 +1,19 @@
+/* PlugIntoNirvana.css */
+
+.electric-glow-text {
+  animation: glow-text 4s infinite;
+  text-shadow: 0 0 5px #00ff00, 0 0 1px #00ff00, 0 0 10px #00ff00;
+  color: #00ff00;
+}
+
+@keyframes glow-text {
+  0% {
+    text-shadow: 0 0 5px #00ff00;
+  }
+  50% {
+    text-shadow: 0 0 10px #00ff00, 0 0 5px #00ff00;
+  }
+  100% {
+    text-shadow: 0 0 5px #00ff00;
+  }
+}
