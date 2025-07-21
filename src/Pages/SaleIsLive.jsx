@@ -63,9 +63,9 @@ const BigDeals = () => {
         <section
             id="arrival-data"
             ref={containerRef}
-            className="px-4 sm:px-8 md:px-16 lg:px-32 relative z-0 w-full min-h-screen text-white overflow-hidden"
+            className="px-4 sm:px- md:px-16 lg:px-32 relative z-0 w-full min-h-screen text-white overflow-hidden"
         >
-            <div className="text-5xl sm:text-9xl font-bold font-[Inter] flex w-full h-12 mb-10 max-sm:justify-center max-sm:mb-2 mt-10 lg:mt-40">
+            <div className="text-5xl sm:text-9xl font-bold font-[Inter] flex w-full h-36 max-sm:h-12 mb-10 max-sm:justify-center max-sm:mb-8 mt-10 lg:mt-40">
                 <BoxReveal boxColor="red">Sale <span className="text-red-600">Is Live</span><br /></BoxReveal>
             </div>
 
@@ -82,19 +82,39 @@ const BigDeals = () => {
                 />
             </div>
 
-            <div className="grid relative z-10 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {/* Cards grid: horizontal scroll on small devices */}
+            <div
+                className="
+                    relative z-10 gap-6
+                    grid sm:grid-cols-2 lg:grid-cols-3
+                    max-sm:grid-cols-none max-sm:flex max-sm:overflow-x-auto max-sm:pb-4
+                    scrollbar-thin scrollbar-thumb-red-600 scrollbar-track-transparent
+                "
+            >
                 {SaleProducts.map((sale) => (
-                    <div key={sale.id} className="product-card p-6 lg:p-0">
+                    <div
+                        key={sale.id}
+                        className="product-card p-6 lg:p-0 max-sm:w-full max-sm:flex-shrink-0"
+                    >
                         <SaleCard sale={sale} />
                     </div>
                 ))}
             </div>
 
+            {/* Desktop image */}
             <img
+                className="w-full mt-20 object-cover max-sm:hidden"
                 src="https://www.boat-lifestyle.com/cdn/shop/files/Strips_895f0826-e273-4982-8101-433c815815c1_1600x.png?v=1752817596"
-                alt="Sale Banner" />
+                alt="Sale Banner"
+            />
+            {/* Mobile image */}
+            <img
+                className="w-full mt-18 object-cover rounded mb-3 sm:hidden max-sm:mt-10 max-sm:h-24 max-sm:object-contain"
+                src="https://www.boat-lifestyle.com/cdn/shop/files/mobile_Artboard_1_be21cce6-56ec-4352-a1ca-68f03c2ba3f4_400x.png?v=1752737443"
+                alt="Sale Banner Mobile"
+            />
         </section>
-    );  
+    );
 };
 
 export default BigDeals
