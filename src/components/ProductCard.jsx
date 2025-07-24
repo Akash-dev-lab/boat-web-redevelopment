@@ -24,7 +24,7 @@ const ProductCard = ({ product }) => {
           alt={product.name}
           className="w-full h-40 object-contain mb-3"
         />
-        <h3 className="text-lg font-semibold font-[Barlow_Condensed]">
+        <h3 className="text-lg font-semibold font-[Inter]">
           {product.name}
         </h3>
         <p className="text-sm opacity-80 font-[Inter]">{product.description}</p>

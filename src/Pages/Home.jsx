@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform, useMotionTemplate } from "framer-motio
 import { Link } from 'react-router-dom';
 import NewArrivals from '../Pages/NewArrivals';
 import SaleCard from './SaleIsLive';
+import {AnimatedTestimonialsDemo} from "../Pages/Testimonials"
 
 const Home = () => {
 
@@ -85,6 +86,7 @@ const Home = () => {
 
       <NewArrivals />
       <SaleCard />
+      <AnimatedTestimonialsDemo />
     </>
   )
 }

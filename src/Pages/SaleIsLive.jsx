@@ -63,9 +63,9 @@ const BigDeals = () => {
         <section
             id="arrival-data"
             ref={containerRef}
-            className="px-4 sm:px- md:px-16 lg:px-32 relative z-0 w-full min-h-screen text-white overflow-hidden"
+            className="px-4 sm:px- md:px-16 lg:px-32 relative z-0 w-full text-white overflow-hidden"
         >
-            <div className="text-5xl sm:text-9xl font-bold font-[Inter] flex w-full h-36 max-sm:h-12 mb-10 max-sm:justify-center max-sm:mb-8 mt-10 lg:mt-40">
+            <div className="text-5xl sm:text-9xl font-bold font-[Inter] flex w-full h-auto max-sm:h-12 mb-10 max-sm:justify-center max-sm:mb-8 mt-10 lg:mt-40">
                 <BoxReveal boxColor="red">Sale <span className="text-red-600">Is Live</span><br /></BoxReveal>
             </div>
 
@@ -82,7 +82,7 @@ const BigDeals = () => {
                 />
             </div>
 
-            {/* Cards grid: horizontal scroll on small devices */}
+
             <div
                 className="
                     relative z-10 gap-6

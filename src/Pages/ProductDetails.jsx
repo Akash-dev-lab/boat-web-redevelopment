@@ -1,4 +1,3 @@
-// ProductDetails.jsx
 import { motion } from "framer-motion";
 import { useParams, Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
@@ -60,7 +59,7 @@ const ProductDetail = () => {
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h2 className="text-3xl sm:text-4xl font-bold font-[Montserrat] [font-size:clamp(1.75rem,4.8vw,2.75rem)]">
+                    <h2 className="text-3xl sm:text-4xl font-bold font-[Inter] [font-size:clamp(1.75rem,4.8vw,2.75rem)]">
                         {product.name}
                     </h2>
                     <p className="text-gray-300 leading-relaxed text-sm sm:text-base font-[Inter] [font-size:clamp(1rem,3.5vw,1.25rem)]">
@@ -84,12 +83,6 @@ const ProductDetail = () => {
                         >
                             Add to Cart 
                         </ConfettiButton>
-
-                        {qty > 0 && (
-                            <span className="text-white bg-red-400 font-bold [font-size:clamp(0.9rem,3.8vw,1rem)]">
-                                X{qty}
-                            </span>
-                        )}
                     </div>
                 </motion.div>
             </motion.section>
@@ -111,8 +104,8 @@ const ProductDetail = () => {
                                     alt={rel.name}
                                     className="h-40 object-contain mb-3 mx-auto hover:scale-105 transition-transform duration-300"
                                 />
-                                <h4 className="font-semibold text-lg">{rel.name}</h4>
-                                <div className="text-red-400 font-bold">
+                                <h4 className="font-semibold font-[Inter] text-lg">{rel.name}</h4>
+                                <div className="text-red-400 font-[Inter] font-bold">
                                     {rel.price.toLocaleString()}
                                 </div>
                             </motion.div>

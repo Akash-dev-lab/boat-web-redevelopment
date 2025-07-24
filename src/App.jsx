@@ -10,6 +10,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { useCart } from "./context/CartContext";
 import CartPage from "./Pages/CartPage";
 import Login from "./Pages/Login";
+import Footer from "./Pages/Footer";
+
 
 
 function SlideDownIndicator() {
@@ -67,8 +69,6 @@ function SlideDownIndicator() {
 
 const App = () => {
 
-  const { toggleCart, cartItems } = useCart();
-
   return (
     <div className="flex justify-center flex-col bg-black items-center">
       <SlideDownIndicator />
@@ -81,7 +81,7 @@ const App = () => {
         <Route path="/cart" element={<CartPage />} />
         <Route path="/login" element={<Login />} />
       </Routes>
-
+      <Footer />
     </div>
   )
 }

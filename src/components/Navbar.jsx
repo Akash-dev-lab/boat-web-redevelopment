@@ -1,20 +1,15 @@
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
 import { Link,  useNavigate } from 'react-router-dom';
 import { FloatingDock } from "./magicui/floating-dock";
+import boAtLogo from "../assets/NewArrival-vedios/boat-logo.png";
 import {
-    IconBrandGithub,
     IconBrandProducthunt,
-    IconBrandWhatsapp,
     IconBrandX,
-    IconExchange,
     IconHome,
 } from "@tabler/icons-react";
-import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const navigate = useNavigate();
 
     const links = [
         {
@@ -68,20 +63,11 @@ const Navbar = () => {
                 </svg>
             ),
             href: "/login",
-        },
-        {
-            title: "Signup",
-            icon: (
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-full w-full hover:dark:text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-line-cap="round" stroke-line-join="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
-                </svg>
-            ),
-            href: "#",
-        },
+        }
     ];
 
     return (
-        <header className="fixed w-[90%] top-12 rounded-lg z-50 backdrop-blur-xl bg-white/10 border-b border-white/10 shadow-md">
+        <header className="fixed w-[90%] top-12 rounded-lg z-50 backdrop-blur-xl border-b border-b-white/10 shadow-md">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
                 {/* Logo */}
                 <Link to="/" className="sm:text-4xl font-bold font-[Inter] text-red-600 tracking-tight">
@@ -92,7 +78,6 @@ const Navbar = () => {
                 <nav className="hidden max-md:block max-sm:block md:flex gap-8 text-white font-[Inter] font-bold">
 
                     <FloatingDock desktopClassName={'bg-transparent'}
-                        // mobileClassName="translate-y-0" // only for demo, remove for production
                         items={links}
                     />
                 </nav>

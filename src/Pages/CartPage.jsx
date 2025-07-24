@@ -46,10 +46,10 @@ const CartPage = () => {
                         transition={{ delay: 0.3 }}
                     >
                         <div className="text-6xl mb-4">🛒</div>
-                        <h2 className="text-2xl mb-4 text-gray-400">Your cart is empty</h2>
+                        <h2 className="text-2xl mb-4 font-[Inter] text-gray-400">Your cart is empty</h2>
                         <Link
                             to="/products"
-                            className="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-lg transition-colors inline-block"
+                            className="bg-red-600 hover:bg-red-700 font-[Inter] px-6 py-3 rounded-lg transition-colors inline-block"
                         >
                             Continue Shopping
                         </Link>
