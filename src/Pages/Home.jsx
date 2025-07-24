@@ -49,7 +49,7 @@ const Home = () => {
 
         <div className="absolute top-0 left-0 w-full h-full -z-10 pointer-events-none bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0)_10%,_rgba(0,0,0,0.9)_100%)]"></div>
 
-        <div className="container lg:flex lg:flex-col gap-4 justify-center h-screen items-center mx-auto px-6 md:px-12 xl:px-20 py-32">
+        <div className="container lg:flex lg:flex-col gap-4 max-sm:flex max-sm:flex-col justify-center h-screen items-center mx-auto px-6 md:px-12 xl:px-20 py-32">
           <motion.h1
             initial={{ opacity: 0, y: 60 }}
             animate={{ opacity: 1, y: 0 }}
@@ -57,7 +57,7 @@ const Home = () => {
             className="md:text-8xl text-[clamp(2.9rem,9vw,9rem)] font-extrabold leading-tight text-white tracking-tight font-[Inter]"
           >
             Unleash <span className="text-orange-500">Sound</span><br />
-            with <span className="text-red-600">boAt</span> Lifestyle
+            with bo<span className="text-red-600">At</span> Lifestyle
           </motion.h1>
 
           <motion.p

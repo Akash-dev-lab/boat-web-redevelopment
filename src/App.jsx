@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react"
 import Navbar from "./components/Navbar"
 import Products from "./Pages/Products"
+import ProductDetail from "./Pages/ProductDetails";
 import CursorBall from "./CursorBall"
 import Home from "./Pages/Home"
 import { useRef } from "react"
 import gsap from "gsap"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { useCart } from "./context/CartContext";
+import CartPage from "./Pages/CartPage";
 
 
 function SlideDownIndicator() {
@@ -62,6 +65,9 @@ function SlideDownIndicator() {
 }
 
 const App = () => {
+
+  const { toggleCart, cartItems } = useCart();
+
   return (
     <div className="flex justify-center flex-col bg-black items-center">
       <SlideDownIndicator />
@@ -70,9 +76,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
-
+        <Route path="/products/:id" element={<ProductDetail />} />
+        <Route path="/cart" element={<CartPage />} />
       </Routes>
-      
+
     </div>
   )
 }
