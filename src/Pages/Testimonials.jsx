@@ -60,7 +60,7 @@ export function AnimatedTestimonialsDemo() {
                         disableRotation={false}
                     />
                 </div>
-                <AnimatedTestimonials testimonials={testimonials} />
+                <AnimatedTestimonials  testimonials={testimonials} />
             </section>
         </>
     )
