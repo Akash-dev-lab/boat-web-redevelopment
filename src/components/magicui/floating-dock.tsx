@@ -34,28 +34,28 @@ const FloatingDockMobile = ({
         {open && (
           <motion.div
             layoutId="nav"
-            className="absolute inset-x-0 top-full mt-2 flex flex-col gap-2">
+            className="absolute inset-x-0 top-full mt-10 justify-center flex flex-col gap-3">
             {items.map((item, idx) => (
               <motion.div
                 key={item.title}
-                initial={{ opacity: 0, y: -20 }}
+                initial={{ opacity: 0, y: 10 }}
                 animate={{
                   opacity: 1,
                   y: 0,
                 }}
                 exit={{
                   opacity: 0,
-                  y: -20,
+                  y: 10,
                   transition: {
                     delay: idx * 0.05,
                   },
                 }}
-                transition={{ delay: idx * 0.05 }}>
+                transition={{ delay: (items.length - 1 - idx) * 0.05 }}>
                 <a
                   href={item.href}
                   key={item.title}
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-50 dark:bg-neutral-900">
-                  <div className="h-4 w-4">{item.icon}</div>
+                  className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-50 dark:bg-neutral-900">
+                  <div className="h-7 w-7">{item.icon}</div>
                 </a>
               </motion.div>
             ))}
@@ -65,7 +65,7 @@ const FloatingDockMobile = ({
       <button
         onClick={() => setOpen(!open)}
         className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-50 dark:bg-neutral-800">
-        <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
+        <IconLayoutNavbarCollapse className="h-6 w-6 text-neutral-500 dark:text-neutral-400" />
       </button>
     </div>
   );

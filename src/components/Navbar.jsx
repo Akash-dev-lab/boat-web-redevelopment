@@ -37,18 +37,6 @@ const Navbar = () => {
             href: "/cart",
         },
         {
-            title: "Aceternity UI",
-            icon: (
-                <img
-                    src="https://assets.aceternity.com/logo-dark.png"
-                    width={20}
-                    height={20}
-                    alt="Aceternity Logo"
-                />
-            ),
-            href: "#",
-        },
-        {
             title: "Changelog",
             icon: (
                 <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
@@ -81,16 +69,18 @@ const Navbar = () => {
                 </Link>
 
                 {/* Desktop Nav */}
-                <nav className="hidden md:flex gap-8 text-white font-[Inter] font-bold">
+                <nav className="hidden max-md:block max-sm:block md:flex gap-8 text-white font-[Inter] font-bold">
 
                     <FloatingDock desktopClassName={'bg-transparent'}
-                        mobileClassName="translate-y-20" // only for demo, remove for production
+                        // mobileClassName="translate-y-0" // only for demo, remove for production
                         items={links}
                     />
                 </nav>
 
                 {isOpen && (
+                    <div className='w-full'>
                     <FloatingDock items={links} />
+                    </div>
                 )}
             </div>
 
