@@ -9,6 +9,7 @@ import gsap from "gsap"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { useCart } from "./context/CartContext";
 import CartPage from "./Pages/CartPage";
+import Login from "./Pages/Login";
 
 
 function SlideDownIndicator() {
@@ -53,7 +54,7 @@ function SlideDownIndicator() {
         ref={indicatorRef}
         className="fixed bottom-8 -translate-x-1/2 z-50 flex flex-col items-center animate-bounce pointer-events-none select-none"
       >
-        <div className="mb-2 px-4 py-2 bg-black/70 text-white rounded-full text-xs font-semibold shadow-lg">
+        <div className="mb-2 px-4 py-2 bg-black/70 text-white font-[Inter] rounded-full text-xs font-semibold shadow-lg">
           Slide down for latest content
         </div>
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
@@ -78,6 +79,7 @@ const App = () => {
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<ProductDetail />} />
         <Route path="/cart" element={<CartPage />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
 
     </div>

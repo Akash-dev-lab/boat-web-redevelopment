@@ -11,7 +11,8 @@ const ProductDetail = () => {
     const product = products.find((p) => p.id === parseInt(id, 10));
     const related = products.filter((p) => p.id !== product?.id);
     const currentEntry = cartItems.find((p) => console.log(p.id));
-    const qty = currentEntry?.quantity || 0;
+    const qty = currentEntry || 0;
+    console.log(qty)
 
     if (!product) {
         return (
@@ -65,7 +66,7 @@ const ProductDetail = () => {
                     <p className="text-gray-300 leading-relaxed text-sm sm:text-base font-[Inter] [font-size:clamp(1rem,3.5vw,1.25rem)]">
                         {product.description}
                     </p>
-                    <div className="text-xl sm:text-2xl font-bold text-red-500 [font-size:clamp(1.25rem,5vw,1.75rem)] font-[Orbitron]">
+                    <div className="text-xl sm:text-2xl font-bold text-red-500 [font-size:clamp(1.25rem,5vw,1.75rem)] font-[Inter]">
                         ₹ {product.price.toLocaleString()}
                     </div>
 
@@ -73,7 +74,7 @@ const ProductDetail = () => {
                     <div className="relative">
                         <ConfettiButton
                             onClick={handleAddToCart}
-                            className="bg-[#E7000B] hover:bg-[#c5000a] text-white px-6 py-3 rounded-lg shadow-md font-semibold uppercase tracking-wider [font-size:clamp(0.9rem,3.8vw,1rem)] font-[Inter] transition-colors"
+                            className="bg-[#E7000B] cursor-pointer hover:bg-[#c5000a] text-white px-6 py-3 rounded-lg shadow-md font-semibold uppercase tracking-wider [font-size:clamp(0.9rem,3.8vw,1rem)] font-[Inter] transition-colors"
                             options={{
                                 particleCount: 100,
                                 spread: 70,
@@ -81,11 +82,11 @@ const ProductDetail = () => {
                                 colors: ["#E7000B", "#ff6b6b", "#feca57", "#48dbfb", "#ff9ff3"],
                             }}
                         >
-                            Add to Cart 🎉
+                            Add to Cart 
                         </ConfettiButton>
 
                         {qty > 0 && (
-                            <span className="text-white font-bold [font-size:clamp(0.9rem,3.8vw,1rem)]">
+                            <span className="text-white bg-red-400 font-bold [font-size:clamp(0.9rem,3.8vw,1rem)]">
                                 X{qty}
                             </span>
                         )}

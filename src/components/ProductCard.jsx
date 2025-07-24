@@ -28,8 +28,8 @@ const ProductCard = ({ product }) => {
           {product.name}
         </h3>
         <p className="text-sm opacity-80 font-[Inter]">{product.description}</p>
-        <div className="mt-2 font-bold text-[#E0531F] font-[Orbitron]">
-          ₹{product.price.toLocaleString()}
+        <div className="mt-2 font-bold text-[#E0531F] font-[Inter]">
+          ₹ {product.price.toLocaleString()}
         </div>
       </Tilt>
     </Link>

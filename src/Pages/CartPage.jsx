@@ -34,7 +34,7 @@ const CartPage = () => {
         >
             <div className="max-w-4xl mx-auto">
                 <motion.h1
-                    className="text-4xl font-bold mb-8 font-[Montserrat]"
+                    className="text-4xl font-bold mb-8 font-[Inter]"
                     initial={{ x: -50, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ delay: 0.2 }}></motion.h1>
@@ -60,6 +60,7 @@ const CartPage = () => {
                            
                                 {cartItems.map((item, index) => (
                                      <Tilt
+                                     key={index}
                                 glareEnable={true}
                                 glareMaxOpacity={0.5}
                                 tiltMaxAngleX={10}
@@ -137,7 +138,7 @@ const CartPage = () => {
                             <motion.button
                                 whileHover={{ scale: 1.02 }}
                                 whileTap={{ scale: 0.98 }}
-                                className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg font-semibold text-lg transition-colors"
+                                className="w-full bg-red-600 hover:bg-red-700 cursor-pointer text-white py-3 rounded-lg font-semibold text-lg transition-colors"
                             >
                                 Proceed to Checkout
                             </motion.button>
