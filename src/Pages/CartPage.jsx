@@ -83,19 +83,19 @@ const CartPage = () => {
                                             className="w-24 h-24 object-contain rounded-lg bg-white p-2"
                                         />
                                         <div className="flex-1">
-                                            <h3 className="text-xl font-bold mb-2 font-[Montserrat]">
+                                            <h3 className="text-xl font-bold mb-2 font-[Inter]">
                                                 {item.name}
                                             </h3>
                                             <p className="text-gray-300 text-sm mb-2 font-[Inter]">
                                                 {item.description}
                                             </p>
                                             <div className="flex items-center space-x-4">
-                                                <span className="font-bold text-lg font-[Orbitron] text-red-500">
+                                                <span className="font-semibold text-lg font-[Inter] text-red-500">
                                                     ₹ {item.price.toLocaleString()}
                                                 </span>
                                                 <span className="text-white">× {item.quantity}</span>
                                             </div>
-                                            <div className="mt-1 text-gray-400 text-sm">
+                                            <div className="mt-1 font-[Inter] text-gray-400 text-sm">
                                                 Subtotal: ₹ {(item.price * item.quantity).toLocaleString()}
                                             </div>
                                         </div>
@@ -122,7 +122,7 @@ const CartPage = () => {
                             initial={{ y: 50, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ delay: 0.4 }}
-                            className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6"
+                            className="bg-white/10 backdrop-blur-md border font-[Inter] border-white/20 rounded-xl p-6"
                         >
                             <div className="flex justify-between items-center mb-4">
                                 <h3 className="text-xl font-semibold">Total Items:</h3>

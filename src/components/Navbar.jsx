@@ -31,7 +31,7 @@ const Navbar = () => {
             href: "/products",
         },
         {
-            title: "Carts",
+            title: "Cart",
             icon: (
                 <IconNewSection className="h-full w-full hover:dark:text-red-600" />),
             href: "/cart",
