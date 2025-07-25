@@ -4,6 +4,7 @@ import { useCart } from "../context/CartContext";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Tilt from "react-parallax-tilt";
+import Particles from '../ReactBits-component/Particles';
 
 const CartPage = () => {
     const { cartItems, setCartItems } = useCart();
@@ -32,6 +33,18 @@ const CartPage = () => {
             transition={{ duration: 0.6 }}
             className="min-h-screen mt-30 text-white p-6 sm:p-10"
         >
+            <div className="absolute inset-0 w-full h-full z-10 pointer-events-none">
+                <Particles
+                    particleColors={['#ffffff', '#E7000B']}
+                    particleCount={200}
+                    particleSpread={10}
+                    speed={0.1}
+                    particleBaseSize={100}
+                    moveParticlesOnHover={true}
+                    alphaParticles={false}
+                    disableRotation={false}
+                />
+            </div>
             <div className="max-w-4xl mx-auto">
                 <motion.h1
                     className="text-4xl font-bold mb-8 font-[Inter]"
@@ -56,7 +69,7 @@ const CartPage = () => {
                     </motion.div>
                 ) : (
                     <>
-                        <div className="space-y-6 mb-8">
+                        <div className="space-y-6 z-20 mb-8">
                            
                                 {cartItems.map((item, index) => (
                                      <Tilt
@@ -68,7 +81,7 @@ const CartPage = () => {
                                 glareColor="red"
                                 scale={1.02}
                                 transitionSpeed={1000}
-                                className="backdrop-blur-md border bg-white/10 border-white/10 rounded-2xl p-4 text-white shadow-md hover:shadow-xl transition-all duration-300"
+                                className="backdrop-blur-md border bg-white/2 border-white/10 rounded-2xl p-4 text-white shadow-md hover:shadow-xl transition-all duration-300"
                             >
                                     <motion.div
                                         key={item.id}

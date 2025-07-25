@@ -1,30 +1,42 @@
-// pages/Login.jsx
 import { motion } from "framer-motion";
 import loginImg from "../assets/NewArrival-vedios/boat-seeklogo.png";
+import Particles from "../ReactBits-component/Particles";
 
 const Login = () => {
   return (
-    <motion.div
-      className="min-h-screen flex w-full items-center justify-center bg-black text-white p-6"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <div className="max-w-5xl w-full bg-black border border-gray-900 rounded-lg shadow-lg flex flex-col md:flex-row overflow-hidden">
-        {/* Left Image */}
+    <div className="relative w-full min-h-screen flex items-center justify-center bg-black text-white overflow-hidden">
+      <div className="absolute inset-0 z-10 pointer-events-none">
+        <Particles
+          particleColors={['#ffffff', '#E7000B']}
+          particleCount={200}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
+        />
+      </div>
+
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="max-w-5xl w-full bg-black border border-gray-900 rounded-lg shadow-lg flex flex-col md:flex-row overflow-hidden z-10"
+      >
+     
         <div className="md:w-1/2 w-full h-80 md:h-auto">
           <img
             src={loginImg}
             alt="Login Illustration"
-            className=" object-cover"
+            className="object-cover"
           />
         </div>
 
-        {/* Right Login Form */}
         <div className="md:w-1/2 font-[Inter] w-full p-8 mt-5 flex items-center justify-center">
           <div className="w-full max-w-md">
             <h2 className="text-3xl font-bold mb-6 text-center">Login</h2>
-            {/* Your login form here */}
             <form>
               <input
                 className="w-full p-2 rounded-md mb-4 bg-[#1D1D1B] border border-gray-600"
@@ -47,8 +59,8 @@ const Login = () => {
             </form>
           </div>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 };
 

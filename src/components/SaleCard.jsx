@@ -1,7 +1,7 @@
 import Tilt from "react-parallax-tilt";
 
 const SaleCard = ({ sale }) => {
-  console.log(sale);
+  // console.log(sale);
   return (
     <>
     <Tilt

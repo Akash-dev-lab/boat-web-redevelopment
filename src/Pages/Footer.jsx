@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 
 const Footer = () => (
-  <footer className="bg-[#18181B] text-white w-full pt-10 pb-6 px-4 mt-16">
+  <footer className="bg-[#18181B] text-white w-full pt-10 pb-6 px-4">
     <div className="w-full p-10 mx-auto flex flex-col md:flex-row md:justify-between items-center gap-8">
       {/* Logo & Tagline */}
       <div className="flex items-center flex-col md:flex-row gap-4">
@@ -15,7 +15,7 @@ const Footer = () => (
       </div>
 
       {/* Links */}
-      <div className="flex flex-col md:flex-row gap-6 text-center md:text-left">
+      <div className="flex flex-col font-[Inter] md:flex-row gap-6 text-center md:text-left">
         <div>
           <h4 className="font-semibold mb-2 font-[Inter] text-red-500 uppercase text-xs">Products</h4>
           <ul className="space-y-1">
@@ -25,7 +25,7 @@ const Footer = () => (
           </ul>
         </div>
         <div>
-          <h4 className="font-semibold mb-2 text-red-500 font-[Inter] uppercase text-xs">Support</h4>
+          <h4 className="font-semibold mb-2 text-red-500 uppercase text-xs">Support</h4>
           <ul className="space-y-1">
             <li><a href="mailto:support@boat.com" className="hover:text-red-400">Email Support</a></li>
             <li><a href="https://twitter.com/boatsupport1" target="_blank" rel="noopener noreferrer" className="hover:text-red-400">Twitter</a></li>
