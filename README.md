@@ -19,7 +19,7 @@ React 19, TailwindCSS 4, Framer Motion, GSAP, Lenis, and more.
 ## 🔗 Live Demo
 
 🚀 [View Live Website on Vercel] ([https://boat-web-redevelopment.vercel.app](https://boat-web-redevelopment.vercel.app/))  
-🛠️ [Source Code on GitHub](https://github.com/akash-dev-lab/boat-web-redevelopment)
+🛠️ [Source Code on GitHub]([https://github.com/akash-dev-lab/boat-web-redevelopment](https://github.com/Akash-dev-lab/boat-web-redevelopment))
 
 ---
 
@@ -53,3 +53,48 @@ React 19, TailwindCSS 4, Framer Motion, GSAP, Lenis, and more.
 
 ## 📁 Project Structure
 
+boat-web-redevelopment/
+├── public/
+│ └── screenshots/ # Screenshots for README
+├── src/
+│ ├── assets/ # Images, Lotties, icons
+│ ├── components/ # Reusable UI components
+│ ├── context/ # Cart or app context logic
+│ ├── pages/ # Routes like Home, Login, ProductDetails
+│ ├── data/ # Products JSON or list
+│ ├── ReactBits-component/# Custom visual bits like Particles
+│ └── index.css / main.jsx
+├── package.json
+└── README.md
+
+
+
+---
+
+## 🧪 Getting Started
+
+### 1. Clone the repo:
+```bash
+git clone https://github.com/akash-dev-lab/boat-web-redevelopment.git
+cd boat-web-redevelopment
+```
+
+### 2. Install dependencies:
+```bash
+npm install
+```
+
+### 3. Start the development server:
+```bash
+npm run dev
+```
+
+📌 Future Enhancements
+🛍️ Add Cart Page with Checkout flow
+🧠 Implement Redux or Zustand for global state
+🔐 Firebase/Auth-based Login
+⚙️ Admin panel for product management
+
+📜 License
+This project is for educational/demo purposes only.
+All trademarks (like boAt) belong to their respective owners.
