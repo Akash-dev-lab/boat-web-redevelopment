@@ -17,7 +17,7 @@ const Footer = () => (
       {/* Links */}
       <div className="flex font-[Inter] md:flex-row gap-6 text-center md:text-left">
         <div>
-          <h4 className="font-semibold mb-2 font-[Inter] text-red-500 uppercase text-xs">Products</h4>
+          <h4 className="font-semibold mb-2 font-[Inter] text-red-600 uppercase text-xs">Products</h4>
           <ul className="space-y-1">
             <li><Link to="/products" className="hover:text-red-400">All Products</Link></li>
             <li><Link to="/cart" className="hover:text-red-400">Cart</Link></li>
@@ -25,7 +25,7 @@ const Footer = () => (
           </ul>
         </div>
         <div>
-          <h4 className="font-semibold mb-2 text-red-500 uppercase text-xs">Support</h4>
+          <h4 className="font-semibold mb-2 text-red-600 uppercase text-xs">Support</h4>
           <ul className="space-y-1">
             <li><a href="mailto:support@boat.com" className="hover:text-red-400">Email Support</a></li>
             <li><a href="https://twitter.com/boatsupport1" target="_blank" rel="noopener noreferrer" className="hover:text-red-400">Twitter</a></li>
@@ -33,7 +33,7 @@ const Footer = () => (
           </ul>
         </div>
         <div>
-          <h4 className="font-semibold mb-2 text-red-500 uppercase text-xs">Community</h4>
+          <h4 className="font-semibold mb-2 text-red-600 uppercase text-xs">Community</h4>
           <ul className="space-y-1">
             <li><a href="https://www.instagram.com/boat.nirvana/" target="_blank" rel="noopener noreferrer" className="hover:text-red-400">Instagram</a></li>
             <li><a href="https://www.facebook.com/boat.nirvana/" target="_blank" rel="noopener noreferrer" className="hover:text-red-400">Facebook</a></li>

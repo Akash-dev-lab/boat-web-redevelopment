@@ -39,8 +39,8 @@ const Products = () => {
       ref={containerRef}
       className="px-4 sm:px-8 md:px-16 lg:px-32 relative z-0 w-full min-h-screen text-white overflow-hidden"
     >
-        <div className="text-4xl sm:text-9xl font-bold font-[Inter] flex justify-center w-full mb-20 max-sm:mb-2 mt-30 lg:mt-40">
-          <BoxReveal boxColor="red">Wear the <span className="text-red-600">Sound</span><br /> Be the Vibe.</BoxReveal>
+        <div className="text-6xl sm:text-9xl font-bold font-[Inter] flex max-sm:justify-center w-full mb-2 max-sm:mb-2 mt-40 lg:mt-50">
+          <BoxReveal boxColor="red">Prod<span className="text-red-600">ucts</span></BoxReveal>
         </div>
 
       <div className="absolute inset-0 w-full h-full -z-10">
@@ -57,7 +57,7 @@ const Products = () => {
         />
       </div>
 
-      <div className="grid relative z-10 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid relative z-10 p-8 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {products.map((product) => (
           <div
             key={product.id}

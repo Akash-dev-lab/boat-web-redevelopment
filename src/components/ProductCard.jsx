@@ -1,4 +1,3 @@
-// ProductCard.jsx
 import Tilt from "react-parallax-tilt";
 import { Link } from "react-router-dom";
 
@@ -17,7 +16,7 @@ const ProductCard = ({ product }) => {
         glareColor="red"
         scale={1.02}
         transitionSpeed={1000}
-        className="backdrop-blur-md border bg-white/10 border-white/10 rounded-2xl p-4 text-white shadow-md hover:shadow-xl transition-all duration-300"
+        className="backdrop-blur-md border max-sm:text-center bg-white/10 border-white/10 rounded-2xl p-4 text-white shadow-md hover:shadow-xl transition-all duration-300"
       >
         <img
           src={product.image}

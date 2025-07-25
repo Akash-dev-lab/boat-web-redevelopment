@@ -46,10 +46,10 @@ function SlideDownIndicator() {
       className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 flex flex-col items-center animate-bounce pointer-events-none select-none"
     >
       <div className="mb-2 px-4 py-2 bg-black/70 text-white font-[Inter] rounded-full text-xs font-semibold shadow-lg">
-        Slide down for latest content
+        Scroll Up...
       </div>
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-        <path d="M12 16L6 10H18L12 16Z" fill="#fff" />
+        <path d="M12 8L18 14H6L12 8Z" fill="#fff" />
       </svg>
     </div>
   );
