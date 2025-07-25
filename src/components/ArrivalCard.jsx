@@ -24,9 +24,7 @@ const ArrivalCard = ({ arrival }) => {
           className="w-full h-64 object-cover"
         />
     
-      <h3 className="text-lg font-semibold font-[Barlow_Condensed]">{arrival.name}</h3>
-      <p className="text-sm opacity-80 font-[Inter]">{arrival.description}</p>
-      <div className="mt-2 font-bold text-[#E0531F] font-[Orbitron]">{arrival.price}</div>
+      <h3 className="text-lg mt-5 font-semibold font-[Barlow_Condensed]">{arrival.name}</h3>
     </Tilt>
   );
 };

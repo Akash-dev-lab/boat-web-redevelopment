@@ -27,19 +27,19 @@ const About = () => {
 
       {/* ✅ Responsive Heading with BoxReveal */}
       <motion.h1
-        className="text-5xl sm:text-8xl font-bold mb-16 font-[Inter] relative z-10 text-center lg:text-right"
+        className="text-5xl sm:text-7xl font-bold mb-16 font-[Inter] relative z-10 text-center lg:text-right"
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
       >
         <BoxReveal className="inline-block" boxColor="#E7000B">
-          About bo<span className="text-[#E7000B]">At</span>
+          Ab<span className="text-[#E7000B]">out</span>
         </BoxReveal>
       </motion.h1>
 
       {/* ✅ Mission Section */}
       <div className="reveal-section max-w-5xl mx-auto text-center mb-24 relative z-10">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-6">Who We Are</h2>
+        <h2 className="text-3xl sm:text-7xl font-bold mb-6">Who We Are <span className="text-[#E7000B]">?</span></h2>
         <p className="text-lg text-gray-300 font-[Inter]">
           At boAt, we're more than just music. We're a lifestyle — built for hustle,
           wired with attitude. From wireless earbuds to smartwatches, we deliver

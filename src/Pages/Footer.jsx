@@ -15,7 +15,7 @@ const Footer = () => (
       </div>
 
       {/* Links */}
-      <div className="flex flex-col font-[Inter] md:flex-row gap-6 text-center md:text-left">
+      <div className="flex font-[Inter] md:flex-row gap-6 text-center md:text-left">
         <div>
           <h4 className="font-semibold mb-2 font-[Inter] text-red-500 uppercase text-xs">Products</h4>
           <ul className="space-y-1">
