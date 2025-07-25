@@ -19,7 +19,7 @@ React 19, TailwindCSS 4, Framer Motion, GSAP, Lenis, and more.
 ## 🔗 Live Demo
 
 🚀 [View Live Website on Vercel] ([https://boat-web-redevelopment.vercel.app](https://boat-web-redevelopment.vercel.app/))  
-🛠️ [Source Code on GitHub]([https://github.com/akash-dev-lab/boat-web-redevelopment](https://github.com/Akash-dev-lab/boat-web-redevelopment))
+🛠️ [Source Code on GitHub] ([https://github.com/akash-dev-lab/boat-web-redevelopment](https://github.com/Akash-dev-lab/boat-web-redevelopment))
 
 ---
 
