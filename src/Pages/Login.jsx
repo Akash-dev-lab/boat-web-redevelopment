@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import loginImg from "../assets/NewArrival-vedios/boat-seeklogo.png";
+import loginImg from "../assets/boat-seeklogo.png";
 import Particles from "../ReactBits-component/Particles";
 
 const Login = () => {

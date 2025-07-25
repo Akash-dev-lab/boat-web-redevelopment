@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import { Link,  useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FloatingDock } from "./magicui/floating-dock";
-import boAtLogo from "../assets/NewArrival-vedios/boat-logo.png";
 import {
     IconBrandProducthunt,
     IconBrandX,

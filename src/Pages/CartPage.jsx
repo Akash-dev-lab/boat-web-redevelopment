@@ -60,7 +60,7 @@ const CartPage = () => {
             src="https://lottie.host/73472ec4-8a3b-4fba-af6f-3a183cdff65c/sMoSTAtWQn.lottie"
             loop
             autoplay
-            className="w-full max-sm:w-80"
+            className="mt-14 w-96 max-sm:w-80"
           />
         </div>
 
