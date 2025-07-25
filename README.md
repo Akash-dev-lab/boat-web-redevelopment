@@ -1,12 +1,55 @@
-# React + Vite
+# 🎧 boAt Web Redevelopment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A visually enhanced, responsive **boAt-inspired eCommerce website** built using the modern frontend stack:  
+React 19, TailwindCSS 4, Framer Motion, GSAP, Lenis, and more.
 
-Currently, two official plugins are available:
+> ⚡️ Smooth animations. 🔄 Seamless scrolling. 📱 Fully responsive.  
+> ✨ Designed to reflect the premium, youth-focused energy of boAt's brand.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🖼️ Preview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![boAt Home UI](./public/HomePage.jpg)
+![boAt Product Details](./public/ProductsPage.jpg)
+![boAt Login Page](./public/LoginPage.jpg)
+
+---
+
+## 🔗 Live Demo
+
+🚀 [View Live Website on Vercel] ([https://boat-web-redevelopment.vercel.app](https://boat-web-redevelopment.vercel.app/))  
+🛠️ [Source Code on GitHub](https://github.com/akash-dev-lab/boat-web-redevelopment)
+
+---
+
+## 🛠️ Features
+
+- ⚛️ **React 19** – with functional components & hooks
+- 🎨 **TailwindCSS 4.1** – responsive design with utility-first CSS
+- 💨 **Framer Motion** – dynamic page and component transitions
+- 🌀 **Lenis Smooth Scroll** – buttery scroll behavior
+- 🎯 **GSAP Animations** – fine-tuned scroll-based animations
+- 🎉 **Canvas Confetti** – fun interactive button effects
+- 🎥 **Lottie Animations** – support for animated assets
+- 🔥 **Fully Responsive** – mobile-first design for all screen sizes
+- 🧠 **Clean Architecture** – clear folder and component structure
+
+---
+
+## 📦 Tech Stack
+
+| Category       | Library |
+|----------------|---------|
+| Framework      | `React 19.1` |
+| Styling        | `TailwindCSS 4.1`, `clsx`, `tailwind-merge` |
+| Animations     | `framer-motion`, `gsap`, `lenis`, `canvas-confetti`, `accertinity-ui`, `magic-ui`, `ReactBits` |
+| UI Icons       | `@heroicons/react`, `lucide-react`, `tabler/icons-react` |
+| Routing        | `react-router-dom v7` |
+| Build Tool     | `Vite 7` |
+| ESLint         | With `react-hooks`, `refresh` support |
+
+---
+
+## 📁 Project Structure
+
