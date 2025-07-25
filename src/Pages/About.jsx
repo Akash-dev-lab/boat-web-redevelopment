@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -8,34 +7,11 @@ import { BoxReveal } from "../components/magicui/box-reveal";
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
-  const containerRef = useRef(null);
-
-  useEffect(() => {
-    const sections = containerRef.current.querySelectorAll(".reveal-section");
-    sections.forEach((sec) => {
-      gsap.fromTo(
-        sec,
-        { opacity: 0, y: 50 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          scrollTrigger: {
-            trigger: sec,
-            start: "top 85%",
-            toggleActions: "play none none reverse",
-          },
-        }
-      );
-    });
-  }, []);
-
   return (
     <section
-      ref={containerRef}
       className="relative w-full mt-20 min-h-screen text-white bg-gradient-to-b from-black to-[#1a0000] overflow-hidden px-6 sm:px-20 py-24 z-10"
     >
-      {/* ✅ Background Particles */}
+      {/* 🔴 Background Particles */}
       <div className="absolute inset-0 pointer-events-none z-0">
         <Particles
           className="w-full h-full"
@@ -49,13 +25,14 @@ const About = () => {
         />
       </div>
 
+      {/* ✅ Responsive Heading with BoxReveal */}
       <motion.h1
-        className="text-5xl sm:text-7xl font-bold text-center mb-16 font-[Inter] relative z-10"
+        className="text-5xl sm:text-8xl font-bold mb-16 font-[Inter] relative z-10 text-center lg:text-right"
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
       >
-        <BoxReveal boxColor="#E7000B">
+        <BoxReveal className="inline-block" boxColor="#E7000B">
           About bo<span className="text-[#E7000B]">At</span>
         </BoxReveal>
       </motion.h1>
